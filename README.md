@@ -1,84 +1,86 @@
 # Capstone-Project-EDA-Play-Store-Review-Analysis-
 
-Project Summary -
+***Project Summary*** -
 The purpose of our project is to conduct an exploratory data analysis on the app reviews data from the Google Play Store. The project aims to Analyze the state of the Android app market and to uncover patterns, trends, and relationships in the data and identify factors that influence the popularity and success of the apps.
 
 The following steps will be performed in the project:
 Data collection: Collect and gather all relevant data for analysis.
 
-Data cleaning: Handle missing values, remove duplicates and handle outliers.
+**Data cleaning**: Handle missing values, remove duplicates and handle outliers.
 
-Univariate Analysis: Analyze each variable individually to understand its distribution, range, central tendency, and outliers.
+**Univariate Analysis**: Analyze each variable individually to understand its distribution, range, central tendency, and outliers.
 
-Bivariate Analysis: Analyze the relationship between two variables and identify the relationship between them.
+**Bivariate Analysis**: Analyze the relationship between two variables and identify the relationship between them.
 
-Multivariate Analysis: Analyze more than two variables together to identify complex relationships between variables.
+**Multivariate Analysis**: Analyze more than two variables together to identify complex relationships between variables.
 
-Data Visualization: Use various visualizations such as histograms, box plots, scatter plots, etc. to represent the data and gain insights.
+**Data Visualization**: Use various visualizations such as histograms, box plots, scatter plots, etc. to represent the data and gain insights.
 
-Feature Engineering: Transform and create new variables to improve the quality of the data.
+**Feature Engineering**: Transform and create new variables to improve the quality of the data.
 
-Report Writing: Summarize the insights and findings from the analysis and communicate it effectively to the stakeholders.
+**Report Writing**: Summarize the insights and findings from the analysis and communicate it effectively to the stakeholders.
 
-Problem Statement
-What are the top five earning Category?
-Top 5 earnings Apps
-Total number of paid and free apps on playstore and it's ratio?
-Total Number of user using free and paid Apps
-Highest rating of apps in each genres.
-Highest Installations according to month.
-Top categories on playstore on the basis of number of apps.
-Which category of Apps from the Content Rating column are found more on playstore ?
-Top 5 best average rating category on playstore
-Size distribution of apps in playstore
-Review counts over the time.
-Sentiment Percentage Analysis?
-Apps with the highest number of positive reviews.
-Apps with the highest number of negative reviews.
-Analysing the user subjectivity.
-Relationship between the sentiment_subjectivity and the sentiment_polarity.
-Business Objective
+**Problem Statement**
+1.What are the top five earning Category?
+2.Top 5 earnings Apps
+3.Total number of paid and free apps on playstore and it's ratio?
+4.Total Number of user using free and paid Apps
+5.Highest rating of apps in each genres.
+6.Highest Installations according to month.
+7.Top categories on playstore on the basis of number of apps.
+8.Which category of Apps from the Content Rating column are found more on playstore ?
+9.Top 5 best average rating category on playstore
+10.Size distribution of apps in playstore
+11.Review counts over the time.
+12.Sentiment Percentage Analysis?
+13.Apps with the highest number of positive reviews.
+14.Apps with the highest number of negative reviews.
+15.Analysing the user subjectivity.
+16.Relationship between the sentiment_subjectivity and the sentiment_polarity.
+
+**Business Objective**
 The business objective of performing an exploratory data analysis on the app reviews data from the Google Play Store could be:
 
-Understanding the app market: By analyzing the app review data, insights can be gained into the app market, including the popularity of different types of apps, the trends and patterns in the data, and the factors that influence the success of an app.
+**Understanding the app market**: By analyzing the app review data, insights can be gained into the app market, including the popularity of different types of apps, the trends and patterns in the data, and the factors that influence the success of an app.
 
-Improving app development: The insights from the EDA can help app developers make informed decisions about the development and marketing of their apps. For example, they can understand the features that users value the most and the common complaints and criticisms of their competitors' apps.
+**Improving app development**: The insights from the EDA can help app developers make informed decisions about the development and marketing of their apps. For example, they can understand the features that users value the most and the common complaints and criticisms of their competitors' apps.
 
-Enhancing app marketing: The results of the EDA can also be used to inform and guide app marketing strategies. For example, the insights can be used to target the right audience and improve the app's visibility on the Google Play Store.
+**Enhancing app marketing**: The results of the EDA can also be used to inform and guide app marketing strategies. For example, the insights can be used to target the right audience and improve the app's visibility on the Google Play Store.
 
-Steps Involved
-1. About Dataset
-The Google Play Store dataset contains information about the various Android apps that are available for download on the platform.This information typically includes two files as 'Play Store Data.csv' and the other is 'User Reviews.csv'. Dataset taken from Almabetter
+**Steps Involved**
+**1. About Dataset**
+The Google Play Store dataset contains information about the various Android apps that are available for download on the platform.This information typically includes two files as 'Play Store Data.csv' and the other is 'User Reviews.csv'. **Dataset taken from Almabetter**
 
-user_reviews.csv: The User Reviews dataset has 64295 rows and 5 columns. There are 107457 mising values and 33616 duplicate values in the dataset.
+**user_reviews.csv**: The User Reviews dataset has 64295 rows and 5 columns. There are 107457 mising values and 33616 duplicate values in the dataset.
 
-playstore data.csv: The User Reviews dataset has 10841 rows and 13 columns. There are 1487 mising values and 483 duplicate values in the dataset.
+**playstore data.csv**: The User Reviews dataset has 10841 rows and 13 columns. There are 1487 mising values and 483 duplicate values in the dataset.
 
-2. Understanding Variables
+**2. Understanding Variables**
 Let us first define what information the columns contain based on our inspection.
 
 play_store dataframe has 10841 rows and 13 columns. The 13 columns are identified as below:
 
-App - It tells us about the name of the application with a short description (optional).
-Category - It gives the category to the app.
-Rating - It contains the average rating the respective app received from its users.
-Reviews - It tells us about the total number of users who have given a review for the application.
-Size - It tells us about the size being occupied the application on the mobile phone.
-Installs - It tells us about the total number of installs/downloads for an application.
-Type - IIt states whether an app is free to use or paid.
-Price - It gives the price payable to install the app. For free type apps, the price is zero.
-Content Rating - It states whether or not an app is suitable for all age groups or not.
-Genres - It tells us about the various other categories to which an application can belong.
-Last Updated - It tells us about the when the application was updated.
-Current Ver - It tells us about the current version of the application.
-Android Ver - It tells us about the android version which can support the application on its platform.
-User Reviews DataFrame has 64295 rows and 5 columns. The 5 columns are identified as below:
+1.App - It tells us about the name of the application with a short description (optional).
+2.Category - It gives the category to the app.
+3.Rating - It contains the average rating the respective app received from its users.
+4.Reviews - It tells us about the total number of users who have given a review for the application.
+5.Size - It tells us about the size being occupied the application on the mobile phone.
+6.Installs - It tells us about the total number of installs/downloads for an application.
+7.Type - IIt states whether an app is free to use or paid.
+8.Price - It gives the price payable to install the app. For free type apps, the price is zero.
+9.Content Rating - It states whether or not an app is suitable for all age groups or not.
+10.Genres - It tells us about the various other categories to which an application can belong.
+11.Last Updated - It tells us about the when the application was updated.
+12.Current Ver - It tells us about the current version of the application.
+13.Android Ver - It tells us about the android version which can support the application on its platform.
+14.User Reviews DataFrame has 64295 rows and 5 columns. The 5 columns are identified as below:
 
 App - It tells us about the name of the application with a short description (optional).
 Translated_Review - It contains the Review on the app.
 Sentiment: The overall emotional tone or attitude expressed in a review, such as positive, negative, or neutral.
 Sentiment polarity: A numerical score that quantifies the sentiment of a review, where positive scores indicate positive sentiment, negative scores indicate negative sentiment, and neutral scores indicate neutral sentiment. This score can range from -1 (most negative) to 1 (most positive).
 Sentiment subjectivity: A numerical score that indicates the degree to which a review expresses a personal opinion, as opposed to a factual statement. A score of 0 indicates a completely objective statement, while a score of 1 indicates a completely subjective statement.
+
 3. Data Wrangling
 Data Cleaning
 Handling Missing Values: Rating has 1474 null values which contributes 13.60% of the data. So, replaced the null values with the median. Type has 1 null value which contributes 0.01% of the data. Content_Rating has 1 null value which contributes 0.01% of the data. Current_Ver has 8 null values which contributes 0.07% of the data. Android_Ver has 3 null values which contributes 0.03% of the data. As the number of null values are less, So Dropped the null values. Also, In the User Review, Translated_Review has 26868 null values which contributes 41.79% of the data. Sentiment has 26863 null values which contributes 41.78% of the data. Sentiment_Polarity has 26863 null values which contributes 41.78% of the data. Sentiment_Subjectivity has 26863 null values which contributes 41.78% of the data. Here, not possible to replace the null values as because Sentiment, Sentiment_Polarity and Sentiment_Subjectivity calculated by "Translated_Review" since the "Translated_Review" is also missing from there. So, dropped the null values.
